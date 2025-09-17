@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Affirmio</title>
+    <meta name="description" content="Privacy Policy for Affirmio - Daily Affirmations iOS App - GDPR Compliant">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: linear-gradient(135deg, #f8f9ff 0%, #fff 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 30px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            color: white;
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .sparkles-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            animation: sparkleRotate 3s ease-in-out infinite;
+        }
+
+        @keyframes sparkleRotate {
+            0%, 100% { transform: rotate(0deg) scale(1); }
+            50% { transform: rotate(15deg) scale(1.1); }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: white;
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px 20px;
+            border-radius: 25px;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .content {
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .effective-date {
+            background: linear-gradient(135deg, #667eea, #f093fb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 1.8rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f093fb;
+            position: relative;
+        }
+
+        h2::before {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: #667eea;
+        }
+
+        h3 {
+            color: #764ba2;
+            font-size: 1.4rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        ul {
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .privacy-highlight {
+            background: linear-gradient(135deg, #e8f4ff, #fff);
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 10px;
+        }
+
+        .gdpr-box {
+            background: linear-gradient(135deg, #f093fb20, #667eea20);
+            border: 2px solid #667eea;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 15px;
+            position: relative;
+        }
+
+        .gdpr-box::before {
+            content: '🛡️';
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: white;
+            padding: 0 10px;
+            font-size: 1.5rem;
+        }
+
+        .gdpr-rights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .gdpr-right {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .data-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .data-type {
+            background: linear-gradient(135deg, #f8f9ff, #fff);
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #667eea;
+        }
+
+        .data-type h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .contact-info {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .contact-info h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .contact-email {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #f093fb;
+        }
+
+        .retention-timeline {
+            background: linear-gradient(135deg, #f8f9ff, #fff);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px 0;
+            border: 1px solid #e0e7ff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            border-top: 1px solid #eee;
+        }
+
+        .footer-logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 15px;
+            }
+            
+            .content {
+                padding: 30px 25px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .data-types,
+            .gdpr-rights {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="sparkles-icon">🛡️</div>
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">Your privacy is our priority</p>
+            <a href="index.html" class="back-link">
+                ← Back to Home
+            </a>
+        </header>
+
+        <div class="content">
+            <div class="effective-date">
+                Effective Date: December 7, 2024
+            </div>
+
+            <div class="privacy-highlight">
+                <strong>Privacy First:</strong> Affirmio is designed with privacy at its core. Your personal affirmations and data are stored locally on your device and are never transmitted to our servers without your explicit consent.
+            </div>
+
+            <p>This Privacy Policy describes how Affirmio ("we," "our," or "us") collects, uses, and protects your information when you use our mobile application. We are committed to protecting your privacy and being transparent about our data practices.</p>
+
+            <h2>1. Information We Collect</h2>
+            
+            <div class="data-types">
+                <div class="data-type">
+                    <h4>📝 Personal Content</h4>
+                    <p>Affirmations you create, modify, or import into the app</p>
+                </div>
+                
+                <div class="data-type">
+                    <h4>📊 Usage Statistics</h4>
+                    <p>Streak counts, reading dates, achievement badges, and progress data</p>
+                </div>
+                
+                <div class="data-type">
+                    <h4>⚙️ App Preferences</h4>
+                    <p>Notification settings, app configurations, and user preferences</p>
+                </div>
+                
+                <div class="data-type">
+                    <h4>🔍 Technical Data</h4>
+                    <p>Device type, iOS version, app version for compatibility and crash reporting</p>
+                </div>
+            </div>
+
+            <h2>2. How We Use Your Information</h2>
+            <p>We use the collected information solely to:</p>
+            <ul>
+                <li><strong>Provide core app functionality:</strong> Store and manage your affirmations and track your progress</li>
+                <li><strong>Personalize your experience:</strong> Maintain your preferences and customization settings</li>
+                <li><strong>Send notifications:</strong> Deliver daily reminders based on your chosen schedule</li>
+                <li><strong>Improve the app:</strong> Analyze usage patterns to enhance features and fix bugs</li>
+                <li><strong>Provide customer support:</strong> Respond to your inquiries and technical issues</li>
+            </ul>
+
+            <h2>3. Local Data Storage</h2>
+            <div class="privacy-highlight">
+                <strong>Local First:</strong> All your personal affirmations and content are stored locally on your device using iOS's secure UserDefaults and file system. We do not store your affirmations on remote servers.
+            </div>
+            
+            <h3>3.1 What's Stored Locally</h3>
+            <ul>
+                <li>Your personal affirmations and any custom content</li>
+                <li>Streak counts, reading history, and achievement data</li>
+                <li>App settings and notification preferences</li>
+                <li>OCR processing results (when using Pro features)</li>
+            </ul>
+
+            <h3>3.2 Data Persistence</h3>
+            <p>We implement multiple backup mechanisms to ensure your data persists across app updates and device restarts, including file-based backups and UserDefaults synchronization.</p>
+
+            <h2>4. OCR and Photo Processing</h2>
+            <p>For Pro users utilizing OCR (Optical Character Recognition) features:</p>
+            <ul>
+                <li><strong>Local Processing:</strong> All OCR operations are performed locally on your device using iOS Vision framework</li>
+                <li><strong>No Image Transmission:</strong> Photos and documents are never transmitted to our servers</li>
+                <li><strong>Temporary Processing:</strong> Images are processed in memory and not permanently stored</li>
+                <li><strong>User Control:</strong> You choose which recognized text to save as affirmations</li>
+                <li><strong>Supported Formats:</strong> Standard image types (JPEG, PNG, HEIC) up to 5 images per OCR session</li>
+            </ul>
+
+            <h2>5. Third-Party Services</h2>
+            
+            <h3>5.1 RevenueCat (Subscription Management)</h3>
+            <p>We use RevenueCat to manage Pro subscriptions. RevenueCat may collect:</p>
+            <ul>
+                <li>Purchase history and subscription status</li>
+                <li>Device identifiers for subscription validation</li>
+                <li>Basic usage metrics for subscription analytics</li>
+            </ul>
+            <p>RevenueCat's privacy policy: <a href="https://www.revenuecat.com/privacy/" target="_blank" style="color: #667eea;">https://www.revenuecat.com/privacy/</a></p>
+
+            <h3>5.2 Apple App Store</h3>
+            <p>Subscription payments are processed by Apple and subject to Apple's privacy policy.</p>
+
+            <h3>5.3 Advertising (Free Users)</h3>
+            <p>Free users may see advertisements. Our advertising partners may collect:</p>
+            <ul>
+                <li>Device advertising identifiers</li>
+                <li>Basic demographic information</li>
+                <li>Ad interaction data</li>
+            </ul>
+
+            <h2>6. Data Sharing and Disclosure</h2>
+            <p>We do not sell, rent, or share your personal information with third parties, except:</p>
+            <ul>
+                <li><strong>Service Providers:</strong> Limited data sharing with RevenueCat for subscription management</li>
+                <li><strong>Legal Requirements:</strong> When required by law or to protect our rights</li>
+                <li><strong>Business Transfers:</strong> In the event of a merger or acquisition (users will be notified)</li>
+            </ul>
+
+            <div class="gdpr-box">
+                <h2 style="color: #667eea; border: none; margin: 0; padding: 0;">🇪🇺 GDPR Rights (European Users)</h2>
+                <p>If you are located in the European Economic Area (EEA) or UK, you have the following rights under GDPR:</p>
+                
+                <div class="gdpr-rights">
+                    <div class="gdpr-right">
+                        <strong>📋 Access</strong><br>
+                        Request a copy of your personal data
+                    </div>
+                    <div class="gdpr-right">
+                        <strong>✏️ Rectification</strong><br>
+                        Correct inaccurate personal data
+                    </div>
+                    <div class="gdpr-right">
+                        <strong>🗑️ Erasure</strong><br>
+                        Request deletion of your data
+                    </div>
+                    <div class="gdpr-right">
+                        <strong>📤 Portability</strong><br>
+                        Export your data in a structured format
+                    </div>
+                    <div class="gdpr-right">
+                        <strong>⛔ Restriction</strong><br>
+                        Limit how we process your data
+                    </div>
+                    <div class="gdpr-right">
+                        <strong>🚫 Objection</strong><br>
+                        Object to certain data processing
+                    </div>
+                </div>
+
+                <p><strong>How to Exercise Your Rights:</strong> Contact us at <span style="color: #667eea;">zeelworksmail@gmail.com</span> with your request. We will respond within 30 days.</p>
+            </div>
+
+            <h2>7. Data Retention</h2>
+            <div class="retention-timeline">
+                <h3 style="color: #667eea; margin-top: 0;">⏰ How Long We Keep Your Data</h3>
+                <ul>
+                    <li><strong>App Data:</strong> Stored locally until you delete the app or manually clear data</li>
+                    <li><strong>Subscription Data:</strong> Retained by RevenueCat according to their retention policy</li>
+                    <li><strong>Support Communications:</strong> Up to 2 years for customer service purposes</li>
+                    <li><strong>Analytics Data:</strong> Aggregated and anonymized data may be retained indefinitely</li>
+                </ul>
+            </div>
+
+            <h2>8. Data Security</h2>
+            <p>We implement appropriate security measures to protect your information:</p>
+            <ul>
+                <li><strong>Local Encryption:</strong> Data is protected by iOS's built-in encryption when device is locked</li>
+                <li><strong>Secure Transmission:</strong> All network communications use HTTPS/TLS encryption</li>
+                <li><strong>Access Controls:</strong> Limited access to personal data by our team members</li>
+                <li><strong>Regular Updates:</strong> Security patches and updates are applied regularly</li>
+            </ul>
+
+            <h2>9. Children's Privacy</h2>
+            <p>Affirmio is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us.</p>
+
+            <h2>10. International Data Transfers</h2>
+            <p>While your personal affirmations remain on your device, some service data may be transferred to and processed in countries other than your country of residence. We ensure appropriate safeguards are in place for such transfers.</p>
+
+            <h2>11. Offline Mode and Data Sync</h2>
+            <p>Pro users can use Affirmio offline. When offline:</p>
+            <ul>
+                <li>All data remains local on your device</li>
+                <li>No data transmission occurs</li>
+                <li>Full app functionality is maintained</li>
+            </ul>
+
+            <h2>12. Changes to Privacy Policy</h2>
+            <p>We may update this Privacy Policy periodically to reflect changes in our practices or legal requirements. We will notify users of material changes through:</p>
+            <ul>
+                <li>In-app notifications</li>
+                <li>Email notifications (if you've provided an email)</li>
+                <li>Updates to this webpage</li>
+            </ul>
+
+            <h2>13. Legal Basis for Processing (GDPR)</h2>
+            <p>We process your data based on:</p>
+            <ul>
+                <li><strong>Contract Performance:</strong> To provide app services you've requested</li>
+                <li><strong>Legitimate Interests:</strong> To improve the app and provide customer support</li>
+                <li><strong>Consent:</strong> For optional features like analytics (where required)</li>
+                <li><strong>Legal Obligation:</strong> To comply with applicable laws</li>
+            </ul>
+
+            <h2>14. Your Privacy Choices</h2>
+            <p>You can control your privacy through:</p>
+            <ul>
+                <li><strong>Notification Settings:</strong> Customize or disable notifications in app settings</li>
+                <li><strong>Data Export:</strong> Export your affirmations through the app's export feature</li>
+                <li><strong>Account Deletion:</strong> Delete all local data by uninstalling the app</li>
+                <li><strong>Advertising:</strong> Opt out through iOS privacy settings (Settings > Privacy & Security > Apple Advertising)</li>
+            </ul>
+
+            <div class="contact-info">
+                <h3>Privacy Questions?</h3>
+                <p>For privacy-related inquiries, data requests, or concerns:</p>
+                <div class="contact-email">zeelworksmail@gmail.com</div>
+                <p style="margin-top: 15px; font-size: 0.9rem;">We respond to all privacy requests within 30 days</p>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-logo">
+                <span>✨</span> Affirmio
+            </div>
+            <p>&copy; 2024 Affirmio. Your privacy is our priority.</p>
+            <p><a href="index.html" style="color: #667eea;">Back to Home</a> | <a href="terms.html" style="color: #667eea;">Terms & Conditions</a></p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+name: DailyAffirmations
+options:
+  deploymentTarget:
+    iOS: "17.0"
+packages:
+  GoogleMobileAds:
+    url: https://github.com/googleads/swift-package-manager-google-mobile-ads
+    from: "11.0.0"
+  RevenueCat:
+    url: https://github.com/RevenueCat/purchases-ios
+    from: "4.31.0"
+settings:
+  BASE_SDK: iphoneos
+  IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+  SWIFT_VERSION: "5.0"
+  CODE_SIGN_STYLE: Automatic
+  DEVELOPMENT_TEAM: ""
+targets:
+  DailyAffirmations:
+    type: application
+    platform: iOS
+    bundleId: com.lucalivraghi.DailyAffirmations
+    sources:
+      - path: Sources
+      - path: Resources
+    dependencies:
+      - package: GoogleMobileAds
+      - package: RevenueCat
+    entitlements:
+      path: Resources/DailyAffirmations.entitlements
+    settings:
+      INFOPLIST_FILE: Resources/Info.plist
+      PRODUCT_NAME: Affirmio
+      PRODUCT_BUNDLE_IDENTIFIER: com.lucalivraghi.DailyAffirmations
+      DEVELOPMENT_ASSET_PATHS: Resources/Assets.xcassets
+    scheme:
+      testTargets: []
+    postCompileScripts: []
+    postBuildScripts: []
